@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+    overflow: hidden;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #61dafb;
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: calc(100vh - 50px);
+        animation-timing-function: ease-out;
+    }
+}
